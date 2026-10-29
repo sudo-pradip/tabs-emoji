@@ -1,0 +1,5 @@
+gen-emojis.js
+emojis.txt
+.gitignore
+*.vsix
+demo.gif

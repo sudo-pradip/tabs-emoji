@@ -1,0 +1,52 @@
+{
+  "name": "tabs-emoji",
+  "displayName": "Tabs Emoji",
+  "description": "Mark editor tabs, including Claude Code chat tabs, with an emoji so you can tell them apart",
+  "version": "1.0.1",
+  "publisher": "pradipsodha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudo-pradip/tabs-emoji"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "tabs",
+    "emoji",
+    "marker",
+    "claude",
+    "badge"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "tabsEmoji.pick",
+        "title": "Tabs Emoji: Set Emoji..."
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "tabsEmoji.pick",
+          "group": "navigation"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "tabsEmoji.pick",
+          "group": "1_modification"
+        }
+      ]
+    }
+  }
+}
